@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laptop Booking Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav id="header"> 
+    <ul >
+        <li><a href="index.html" class="nav-link scrollto active">Home<hr></a></li>
+        <li><a href="products.html" class="nav-link scrollto">Products</a></li>
+       <li><a href="about.html" class="nav-link scrollto">About</a></li>
+        <li><a href="contact.html" class="nav-link scrollto">Contact us</a></li>
+    </ul>
+</nav>
+
+  <!-- Laptop booking section start -->
+
+<section class="book-table sec-padding" id="book-table">
+  <div class="table-bg"></div>
+  <div class="container">
+      <div class="row">
+          <div class="section-title">
+              <h2 data-title="Visit us">Laptop Booking</h2>
+          </div>
+      </div>
+      <div class="row min-vh-100">
+          <!-- <div class="table-text">
+              <h1>Eternity Restaurant</h1>
+              <p>Where taste meets the myth</p>
+              <a href="#our-menu" class="btn btn-default">our menu</a>
+          </div> -->
+           <br>
+          <form action="server.php" method="post" id="bookingForm">
+              <div id="content1">
+                  <label> Name </label> <br><br>
+                  <input id="name" name="name" placeholder="Enter your full name" class="box"> <br> <br>
+                  <label> Email </label> <br><br>
+                  <input id="email" type="email" name="email" placeholder="Enter your email address" class="box" > <br> <br>
+                  <label> Phone number </label> <br><br>
+                  <input id="phone" type="phone" name="phone" placeholder="Enter your phone number" class="box" > <br> <br>
+                  <label> Describe your laptop/machine </label> <br><br>
+                  <textarea  name="machine" id="machine" cols="75" rows="10" placeholder="Brand, RAM, ROM, or other features"></textarea><br><br>
+                  
+                  <label>Describe the problem</label> <br><br>
+                  <textarea name="problem" id="problem" cols="75" rows="10" placeholder="What is the issue"></textarea><br><br>
+  
+              <center>
+                  <input type="submit" class="btn btn-default" value="Submit" />
+              </center>
+              </div>
+          </form>
+      </div>    
+  </div>
+</section> 
+<!-- table booking section end -->
+</body>
+</html>
